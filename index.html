@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project</title>
+  <title>Account settings</title>
 
  <!--Fonts-->
 
@@ -16,6 +16,56 @@
 
 <body>
 
+  <main class="main-content">
+    <div class="container">
+      <div class="profile-settings">
+        <form class="profile-settings-form" action="https://echo.htmlacademy.ru" method="post">
+          <header class="profile-settings-header">
+            <h1 class="p-s-header-title">Account settings</h1>
+            <a class="p-s-close-link" href="">
+              <img src="img/close-icon.svg" alt="Close icon" width="24" height="24">
+            </a>
+          </header>
+          <div class="profile-settings-form-body">
+            <img class="p-s-form-img" src="img/profile-avatar-img.jpg" alt="profile img" width="60" height="60">
+
+            <div class="profile-settings-form-group">
+              <label class="p-s-form-label" for="username">Username</label>
+              <input class="p-s-form-field" type="text" name="username" id="username" placeholder="Enter your username" required>
+            </div>
+
+            <div class="first-last-name-wrapper">
+              <div class="profile-settings-form-group">
+                <label class="p-s-form-label" for="first-name">First name</label>
+                <input class="p-s-form-field" type="text" name="first_name" id="first-name" placeholder="Enter your first name" required>
+              </div>
+
+              <div class="profile-settings-form-group">
+                <label class="p-s-form-label" for="last_name">Last name</label>
+                <input class="p-s-form-field" type="text" name="last-name" id="last_name" placeholder="Enter your last name" required>
+              </div>
+            </div>
+
+            <div class="profile-settings-form-group">
+              <label class="p-s-form-label" for="email">Email</label>
+              <input class="p-s-form-field" type="email" name="email" id="email" placeholder="Enter your email" pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$" required>
+            </div>
+
+            <div class="profile-settings-form-group">
+              <label class="p-s-form-label" for="bio-textarea">Bio</label>
+              <textarea class="p-s-form-field p-s-form-field-textarea" name="bio" id="bio-textarea" placeholder="Tell us about yourself" required></textarea>
+            </div>
+
+          </div>
+
+          <footer class="profile-settings-form-actions">
+            <button class="p-s-form-action" type="button">Cancel</button>
+            <button class="p-s-form-action" type="submit">Save</button>
+          </footer>
+        </form>
+      </div>
+    </div>
+  </main>
 
 
   <script src="js/main.js"></script>

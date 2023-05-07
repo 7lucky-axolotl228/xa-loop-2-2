@@ -26,7 +26,7 @@ body {
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  background-color: #fff;
+  background-color: #222;
   color: #222;
 }
 
@@ -50,4 +50,121 @@ img {
 /* MAIN-CONTENT */
 .main-content {
   flex-grow: 1;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+
+.profile-settings {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fdde2e;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+}
+
+.profile-settings-form {
+}
+
+.profile-settings-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+
+.p-s-header-title {
+  margin: 0;
+  font-size: 25px;
+}
+
+.p-s-close-link {
+  display: flex;
+}
+
+.profile-settings-form-body {
+  position: relative;
+  left: 40px;
+  padding: 40px 25px 40px;
+  background-color: #fff;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+}
+
+.p-s-form-img {
+  position: absolute;
+  left: 25px;
+  top: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  transform: translateY(-50%);
+}
+
+.profile-settings-form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.profile-settings-form-group:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.first-last-name-wrapper {
+  display: flex;
+}
+
+.first-last-name-wrapper .profile-settings-form-group {
+  margin-bottom: 0;
+}
+
+.first-last-name-wrapper:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.p-s-form-label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #677;
+}
+
+.p-s-form-field {
+  display: block;
+  width: 100%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: 0;
+  border-bottom: 1px solid #888;
+}
+
+.p-s-form-field:focus {
+  outline: none;
+}
+
+.p-s-form-field-textarea {
+  min-height: 100px;
+  max-height: 140px;
+  resize: vertical;
+}
+
+.profile-settings-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 40px;
+}
+
+.p-s-form-action {
+  padding: 0;
+  border: 0;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.p-s-form-action:not(:last-child) {
+  margin-right: 40px;
 }
